@@ -1,4 +1,19 @@
-RECIPES
+Bkngjobs
+========================
+
+This application was generated with the rails_apps_composer gem:
+https://github.com/RailsApps/rails_apps_composer
+provided by the RailsApps Project:
+http://railsapps.github.com/
+
+________________________
+
+Recipes:
 ["controllers", "core", "email", "extras", "frontend", "gems", "git", "init", "models", "prelaunch", "railsapps", "readme", "routes", "setup", "testing", "views"]
-PREFERENCES
-{:git=>true, :railsapps=>"none", :dev_webserver=>"unicorn", :prod_webserver=>"unicorn", :database=>"mongodb", :orm=>"mongoid", :templates=>"haml", :unit_test=>"test_unit", :integration=>"none", :fixtures=>"none", :frontend=>"bootstrap", :bootstrap=>"sass", :email=>"none", :authentication=>"none", :authorization=>"none", :form_builder=>"none", :starter_app=>"home_app"}
+
+Preferences:
+{:git=>true, :railsapps=>"none", :dev_webserver=>"unicorn", :prod_webserver=>"unicorn", :database=>"mongodb", :orm=>"mongoid", :templates=>"haml", :unit_test=>"test_unit", :integration=>"none", :fixtures=>"none", :frontend=>"bootstrap", :bootstrap=>"sass", :email=>"none", :authentication=>"none", :authorization=>"none", :form_builder=>"none", :starter_app=>"home_app", :ban_spiders=>true}
+
+________________________
+
+License
