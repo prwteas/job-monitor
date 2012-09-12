@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  joblink: MyString
+  department: MyString
+  city: MyString
+  type: 
+  jobid: MyString
+
+two:
+  title: MyString
+  joblink: MyString
+  department: MyString
+  city: MyString
+  type: 
+  jobid: MyString

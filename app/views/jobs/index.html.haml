@@ -1,0 +1,36 @@
+%h1 Listing jobs
+
+%table.datatable
+  %thead
+    %tr
+      %th Title
+      %th Joblink
+      %th Department
+      %th City
+      %th Type
+      %th Jobid
+      %th
+      %th
+      %th
+  %tbody
+    - @jobs.each do |job|
+      %tr
+        %td= job.title
+        %td= link_to("GoTO","http://www.booking.com/jobs.en-us.html?st=details&job_id=#{job.jobid}")
+        %td= job.department
+        %td= job.city
+        %td= job.type
+        %td= job.jobid
+        %td= link_to 'Show', job
+        %td= link_to 'Edit', edit_job_path(job)
+        %td= link_to 'Destroy', job, method: :delete, data: { confirm: 'Are you sure?' }
+  %tfoot      
+
+%br
+
+= link_to 'New Job', new_job_path
+:javascript
+  $('.datatable').dataTable({
+  "sDom": "<'row'<'span6'l><'span6'f>r>t<'row'<'span6'i><'span6'p>>",
+  "sPaginationType": "bootstrap"
+  });
