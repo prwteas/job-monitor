@@ -16,3 +16,6 @@ gem "bootstrap-sass", ">= 2.1.0.0"
 gem "mechanize"
 gem 'pry-rails'
 gem 'jquery-datatables-rails'
+gem 'resque'
+gem 'foreman'
+gem 'geokit'

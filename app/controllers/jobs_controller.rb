@@ -10,6 +10,32 @@ class JobsController < ApplicationController
     end
   end
 
+  def open
+    @jobs = Job.open
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @jobs }
+    end
+
+
+  end
+
+  def updatedb
+    Job.async_import
+
+    redirect_to 'index', notice: "Scraping has begun. Refresh in a bit for results"
+  end
+
+  def closed
+    @jobs=Job.closed
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @jobs }
+    end
+  end
+
   # GET /jobs/1
   # GET /jobs/1.json
   def show
