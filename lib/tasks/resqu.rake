@@ -3,9 +3,9 @@
 
 require 'resque/tasks'
 
-task "resque:setup" =&gt; :environment do
+task "resque:setup" => :environment do
 ENV['QUEUE'] = '*'
 end
 
 desc "Alias for resque:work (To run workers on Heroku)"
-task "jobs:work" =&gt; "resque:work"
+task "jobs:work" => "resque:work"
