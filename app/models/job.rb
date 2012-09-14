@@ -1,3 +1,5 @@
+require 'resque/errors'
+
 class StreamStart
 
 end
@@ -8,6 +10,7 @@ class ImportJobs
   def self.perform
     Job.fetch_jobs
     Job.check_if_removed
+  rescue Resque::TermException
   end
 end
 
