@@ -23,8 +23,8 @@ class JobsController < ApplicationController
 
   def updatedb
     Job.async_import
-
-    redirect_to 'index', notice: "Scraping has begun. Refresh in a bit for results"
+    flash[:notice]="Resque worker is doing this now!"
+    redirect_to jobs_path
   end
 
   def closed
