@@ -66,3 +66,13 @@ test:
         - localhost:27017
       options:
         consistency: :strong
+
+<% if ENV['MONGOHQ_URL'] %>
+  production:
+    sessions:
+      default:
+        uri: <%= ENV['MONGOHQ_URL'] %>
+        options:
+          skip_version_check: true
+          safe: true
+<% end %>

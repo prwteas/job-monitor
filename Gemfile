@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '1.9.3'
 gem 'rails', '3.2.8'
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -6,7 +7,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 gem 'jquery-rails'
-gem "unicorn", ">= 4.3.1"
+gem 'thin', :group => :production
 gem "mongoid", ">= 3.0.5"
 gem "haml", ">= 3.1.7"
 gem "haml-rails", ">= 0.3.5", :group => :development
@@ -19,3 +20,4 @@ gem 'jquery-datatables-rails'
 gem 'resque'
 gem 'foreman'
 gem 'geokit'
+gem 'heroku'
