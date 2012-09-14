@@ -1,6 +1,6 @@
 Bkngjobs::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
-  ENV["REDISTOGO_URL"] = 'redis://username:password@my.host:6789'
+  ENV["REDISTOGO_URL"] = 'redis://redistogo:420ea23db5b736474cefe7e71d9f4bfc@cowfish.redistogo.com:9153'
 
   # In the development environment your application's code is reloaded on
   # every request. This slows down response time but is perfect for development
