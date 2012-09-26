@@ -1,0 +1,19 @@
+// Place all the styles related to the stats controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+lines {
+  display: block;
+  position: relative;
+  width:100%;
+  #jobs_id {
+    position: relative;
+    width:49%;
+    float:left;
+  }
+
+  #cjobs_id {
+    position: relative;
+    width:49%;
+    float:right;
+  }
+}

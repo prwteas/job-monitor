@@ -3,6 +3,7 @@ Bkngjobs::Application.routes.draw do
   match 'jobs/updatedb' => 'jobs#updatedb'
   match 'jobs/open' => 'jobs#open'
   match 'jobs/closed' => 'jobs#closed'
+  match 'stats' => 'stats#index'
 
   resources :jobs
 

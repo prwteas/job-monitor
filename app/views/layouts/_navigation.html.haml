@@ -1,8 +1,12 @@
 = link_to "All Jobs", jobs_path, :class => 'brand'
-= link_to "Update",jobs_updatedb_path, :class=>'brand'
 %ul.nav.nav-pills
   %li
     = link_to "Open",jobs_open_path
   %li
     = link_to "Closed", jobs_closed_path
+  %li
+    = link_to "Statistics",stats_path
+  %li
+    = link_to "Resque","/resque",:style=>"float:right;",:target=>"_blank"
+= link_to "Update",jobs_updatedb_path, :class=>'btn',:style=>"float:right;"
 

@@ -78,6 +78,8 @@ GEM
     json (1.7.5)
     launchy (2.1.2)
       addressable (~> 2.3)
+    lazy_high_charts (1.2.2)
+      bundler (~> 1.0)
     mail (2.4.4)
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
@@ -201,6 +203,7 @@ DEPENDENCIES
   hpricot (>= 0.8.6)
   jquery-datatables-rails
   jquery-rails
+  lazy_high_charts
   mechanize
   mongoid (>= 3.0.5)
   pry-rails

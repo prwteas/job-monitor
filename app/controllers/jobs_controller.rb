@@ -11,7 +11,7 @@ class JobsController < ApplicationController
   end
 
   def open
-    @jobs = Job.open
+    @jobs = Job.open.desc(:created_at)
 
     respond_to do |format|
       format.html # index.html.erb
